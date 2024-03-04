@@ -63,9 +63,13 @@ def show_payment_chart(df_payments):
 
 
 # dataframe
-df_sellers = pd.read_csv('../data/sellers_dataset.csv')
-df_products = pd.read_csv('../data/products_dataset.csv')
-df_payments = pd.read_csv('../data/order_payments_dataset.csv')
+# dataframe
+df_sellers = pd.read_csv(
+    'https://raw.githubusercontent.com/pineaplecodes/dataset/main/sellers_dataset.csv')
+df_products = pd.read_csv(
+    'https://raw.githubusercontent.com/pineaplecodes/dataset/main/products_dataset.csv')
+df_payments = pd.read_csv(
+    'https://raw.githubusercontent.com/pineaplecodes/dataset/main/order_payments_dataset.csv')
 
 # 10 Kota teratas
 city_sellers_count = df_sellers.groupby(
